@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Farm</title>
+    <link rel="shortcut icon" href="bolsa-de-dinheiro.png" type="image/x-icon">
+    <script src="games farm.js"></script>
+</head>
+<style>
+    body{
+    all: unset;
+    background-color: 	#4169E1;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 3rem 4rem;
+    border-radius: 25px;
+}
+
+.content input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-gray);
+    color: var(--color-white);
+    outline: none;
+    padding: .4rem;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.content input::placeholder{
+    color: #fff;
+}
+
+.content input:focus{
+    border-bottom: 1px solid blue;
+}
+
+.content button{
+    padding: .8rem;
+    width: 80%;
+    font-size: 1rem;
+    background-color: blue;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+    
+</style>
+<body>
+    <main>
+    <div class="content">
+        <h1>Descubra um número de 0 a 100</h1>
+        <input type="number" id="bet" placeholder="Digite um número">
+        <button onclick="verifyNumber()">Enviar</button>
+    </div>
+    </main>
+</body>
+</html>
